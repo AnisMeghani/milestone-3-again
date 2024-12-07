@@ -157,3 +157,8 @@ togglebutton.addEventListener('click',() =>{
         skills.style.display = 'none'
     }
 }) 
+
+let edit_btn = document.getElementById('edit_btn')
+edit_btn?.addEventListener('click', ()=>{
+    window.history.back()
+})
