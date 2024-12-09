@@ -34,41 +34,41 @@ let form = document.getElementById("form");
 // let marital_status_options = ["Single", "Married", "Divorced", "Widowed"];
 // // Get the display element
 // let resMarStatus = document.getElementById('resMarStatus');
-form?.addEventListener('submit', (event) => {
+form?.addEventListener("submit", (event) => {
     event.preventDefault();
-    localStorage.setItem('name', Myname.value);
-    localStorage.setItem('age', age.value);
-    localStorage.setItem('marStatus', marStatus.value);
-    localStorage.setItem('gender', gender.value);
-    localStorage.setItem('contact', contact.value);
-    localStorage.setItem('email', email.value);
-    localStorage.setItem('linkdin', linkdin.value);
-    localStorage.setItem('degree1', degree1.value);
-    localStorage.setItem('institute1', institute1.value);
-    localStorage.setItem('pass1', pass1.value);
-    localStorage.setItem('degree2', degree2.value);
-    localStorage.setItem('institute2', institute2.value);
-    localStorage.setItem('pass2', pass2.value);
-    localStorage.setItem('careerDiscr', careerDiscr.value);
-    localStorage.setItem('course1', course1.value);
-    localStorage.setItem('courseLocation1', courseLocation1.value);
-    localStorage.setItem('course2', course2.value);
-    localStorage.setItem('courseLocation2', courseLocation2.value);
-    localStorage.setItem('skill1', skill1.value);
-    localStorage.setItem('skill2', skill2.value);
-    localStorage.setItem('skill3', skill3.value);
-    localStorage.setItem('skill4', skill4.value);
-    localStorage.setItem('skill5', skill5.value);
-    localStorage.setItem('skill6', skill6.value);
-    localStorage.setItem('org', org.value);
-    localStorage.setItem('role', role.value);
-    localStorage.setItem('stYear', stYear.value);
-    localStorage.setItem('endYear', endYear.value);
+    localStorage.setItem("name", Myname.value);
+    localStorage.setItem("age", age.value);
+    localStorage.setItem("marStatus", marStatus.value);
+    localStorage.setItem("gender", gender.value);
+    localStorage.setItem("contact", contact.value);
+    localStorage.setItem("email", email.value);
+    localStorage.setItem("linkdin", linkdin.value);
+    localStorage.setItem("degree1", degree1.value);
+    localStorage.setItem("institute1", institute1.value);
+    localStorage.setItem("pass1", pass1.value);
+    localStorage.setItem("degree2", degree2.value);
+    localStorage.setItem("institute2", institute2.value);
+    localStorage.setItem("pass2", pass2.value);
+    localStorage.setItem("careerDiscr", careerDiscr.value);
+    localStorage.setItem("course1", course1.value);
+    localStorage.setItem("courseLocation1", courseLocation1.value);
+    localStorage.setItem("course2", course2.value);
+    localStorage.setItem("courseLocation2", courseLocation2.value);
+    localStorage.setItem("skill1", skill1.value);
+    localStorage.setItem("skill2", skill2.value);
+    localStorage.setItem("skill3", skill3.value);
+    localStorage.setItem("skill4", skill4.value);
+    localStorage.setItem("skill5", skill5.value);
+    localStorage.setItem("skill6", skill6.value);
+    localStorage.setItem("org", org.value);
+    localStorage.setItem("role", role.value);
+    localStorage.setItem("stYear", stYear.value);
+    localStorage.setItem("endYear", endYear.value);
     if (pic.files && pic.files[0]) {
         let reader = new FileReader();
-        reader.addEventListener('load', () => {
+        reader.addEventListener("load", () => {
             let textImg = reader.result;
-            localStorage.setItem('profile_pic', textImg);
+            localStorage.setItem("profile_pic", textImg);
         });
         reader.readAsDataURL(pic.files[0]);
     }
